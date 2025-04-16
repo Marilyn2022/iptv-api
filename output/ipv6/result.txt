@@ -76,17 +76,7 @@
 
 🎵音乐频道,#genre#
 
-💰肥羊频道,#genre#
-肥羊•斗鱼,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/douyuyqk.m3u
-肥羊•斗鱼,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/douyuyqk.m3u
-肥羊•虎牙,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/huyayqk.m3u
-肥羊•虎牙,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/huyayqk.m3u
-YanG•虎牙,https://ghfast.top/https://raw.githubusercontent.com/YanG-1989/m3u/main/ya.m3u
-YanG•虎牙,https://ghfast.top/https://raw.githubusercontent.com/YanG-1989/m3u/main/ya.m3u
-16万•MV,https://ghfast.top/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/MTV.txt
-16万•MV,https://ghfast.top/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/MTV.txt
-
 🏛经典剧场,#genre#
 
 🕘️更新时间,#genre#
-2025-04-16 20:05:07,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/douyuyqk.m3u
+2025-04-17 06:30:19,url
