@@ -1581,6 +1581,12 @@ CCTV-15
 音乐广播
 音乐调频广播
 
+💰肥羊频道,#genre#
+肥羊•斗鱼,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/douyuyqk.m3u$!白名单，不参与测速
+肥羊•虎牙,https://ghfast.top/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/huyayqk.m3u$!白名单，不参与测速
+YanG•虎牙,https://ghfast.top/https://raw.githubusercontent.com/YanG-1989/m3u/main/ya.m3u$!白名单，不参与测速
+16万•MV,https://ghfast.top/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/MTV.txt$!白名单，不参与测速
+
 🏛经典剧场,#genre#
 笑傲江湖
 天龙八部
