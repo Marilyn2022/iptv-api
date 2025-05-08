@@ -20,8 +20,6 @@
 
 ☘️湖南频道,#genre#
 
-☘️湖北频道,#genre#
-
 ☘️广西频道,#genre#
 
 ☘️天津频道,#genre#
@@ -77,4 +75,4 @@
 🏛经典剧场,#genre#
 
 🕘️更新时间,#genre#
-2025-05-08 18:15:59,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
+2025-05-09 06:12:22,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
