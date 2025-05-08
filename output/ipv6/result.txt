@@ -20,6 +20,8 @@
 
 ☘️湖南频道,#genre#
 
+☘️湖北频道,#genre#
+
 ☘️广西频道,#genre#
 
 ☘️天津频道,#genre#
@@ -48,8 +50,6 @@
 滁州科教,http://live.cztv.cc:85/live/sjpd.m3u8?zanhd
 滁州公共,http://live.cztv.cc:85/live/ggpd.m3u8?zanhd
 
-☘️宁夏频道,#genre#
-
 ☘️吉林频道,#genre#
 延边卫视,http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#
 
@@ -77,4 +77,4 @@
 🏛经典剧场,#genre#
 
 🕘️更新时间,#genre#
-2025-05-08 06:12:42,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
+2025-05-08 18:15:59,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
