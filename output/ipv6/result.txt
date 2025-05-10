@@ -7,6 +7,7 @@
 ☘️广东频道,#genre#
 
 ☘️浙江频道,#genre#
+浙江教科影院,http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
 龙泉新闻综合,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
 上虞文化影院,http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8zzhed
 
@@ -73,4 +74,4 @@
 🏛经典剧场,#genre#
 
 🕘️更新时间,#genre#
-2025-05-10 06:11:10,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
+2025-05-10 18:11:27,http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
