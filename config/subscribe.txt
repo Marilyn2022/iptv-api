@@ -1,6 +1,7 @@
 # 这是订阅源列表，每行一个订阅地址
 # This is a list of subscription sources, with one subscription address per line
 
+https://urlzf.zone.id/tvjk/migudy.txt
 https://urlzf.zone.id/tvjk/jd2.txt
 https://raw.githubusercontent.com/peterHchina/iptv/refs/heads/main/IPTV-V4.m3u
 https://raw.githubusercontent.com/kakaxi-1/IPTV/main/ipv4.txt
