@@ -1,7 +1,5 @@
 📺央视频道,#genre#
 
-💰央视付费频道,#genre#
-
 📡卫视频道,#genre#
 
 ☘️广东频道,#genre#
@@ -45,13 +43,8 @@
 ☘️山西频道,#genre#
 
 ☘️安徽频道,#genre#
-滁州科教,http://live.cztv.cc:85/live/sjpd.m3u8?zanhd
-滁州公共,http://live.cztv.cc:85/live/ggpd.m3u8?zanhd
 
 ☘️吉林频道,#genre#
-延边卫视,http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#
-
-☘️内蒙古频道,#genre#
 
 ☘️云南频道,#genre#
 
@@ -73,4 +66,4 @@
 🏛经典剧场,#genre#
 
 🕘️更新时间,#genre#
-2025-05-12 06:04:24,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
+2025-05-12 18:14:17,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
