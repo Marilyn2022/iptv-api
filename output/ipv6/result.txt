@@ -64,6 +64,9 @@
 🎵音乐频道,#genre#
 
 🏛经典剧场,#genre#
+木奖杯,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/004/354/5105004354/media/5105004354_5039029809_56.mp4
+飞驰人生,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5102/075/226/5102075226/media/5102075226_5176203387_56.mp4
+满江红,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_cidcobs_wxlz03/asset/zhengshi/5105/102/630/5105102630/media/5105102630_5111092406_56.mp4
 
 🕘️更新时间,#genre#
-2025-05-12 18:14:17,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
+2025-05-13 06:10:50,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
