@@ -1,6 +1,4 @@
 #EXTM3U x-tvg-url="https://api.metr.cc/https://raw.githubusercontent.com/Marilyn2022/iptv-api/refs/heads/my_iptv/output/epg/epg.gz"
-#EXTINF:-1 tvg-name="浙江教科影院" tvg-logo="https://api.metr.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教科影院.png" group-title="☘️浙江频道",浙江教科影院
-http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
 #EXTINF:-1 tvg-name="龙泉新闻综合" tvg-logo="https://api.metr.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/龙泉新闻综合.png" group-title="☘️浙江频道",龙泉新闻综合
 http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
 #EXTINF:-1 tvg-name="上虞文化影院" tvg-logo="https://api.metr.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/上虞文化影院.png" group-title="☘️浙江频道",上虞文化影院
@@ -429,5 +427,5 @@ https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105
 https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/004/370/5105004370/media/5105004370_5035305020_56.mp4
 #EXTINF:-1 tvg-name="你是我的春天" tvg-logo="https://api.metr.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/你是我的春天.png" group-title="🏛经典剧场",你是我的春天
 https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5103/614/054/5103614054/media/5103614054_5023970915_56.mp4
-#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://api.metr.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1.png" group-title="🕘️更新时间",2025-05-13 11:04:42
-http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://api.metr.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV1.png" group-title="🕘️更新时间",2025-05-13 18:12:52
+http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
