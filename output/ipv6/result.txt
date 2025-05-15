@@ -1,5 +1,3 @@
-📺央视频道,#genre#
-
 🏛经典剧场,#genre#
 惊奇队长2,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
 幸福来接龙,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/277/188/5105277188/media/5105277188_5229127101_56.mp4
@@ -213,56 +211,31 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 珠峰队长,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/004/370/5105004370/media/5105004370_5035305020_56.mp4
 你是我的春天,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5103/614/054/5103614054/media/5103614054_5023970915_56.mp4
 
-📡卫视频道,#genre#
-
-☘️广东频道,#genre#
-
-☘️浙江频道,#genre#
-龙泉新闻综合,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8?zzhed&quot;
-上虞文化影院,http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8zzhed
-
-☘️北京频道,#genre#
-
-☘️上海频道,#genre#
-
 ☘️重庆频道,#genre#
 
-☘️江苏频道,#genre#
-
-☘️湖南频道,#genre#
-
-☘️广西频道,#genre#
+☘️辽宁频道,#genre#
 
 ☘️天津频道,#genre#
-
-☘️四川频道,#genre#
 
 ☘️陕西频道,#genre#
 
 ☘️福建频道,#genre#
 
-☘️河南频道,#genre#
-
-☘️河北频道,#genre#
+☘️海南频道,#genre#
 
 ☘️贵州频道,#genre#
 
-☘️甘肃频道,#genre#
+☘️安徽省,#genre#
 
-☘️新疆频道,#genre#
-
-☘️山东频道,#genre#
-
-☘️山西频道,#genre#
-
-☘️安徽频道,#genre#
+☘️宁夏频道,#genre#
 
 ☘️吉林频道,#genre#
 
+☘️内蒙古频道,#genre#
+
 ☘️青海频道,#genre#
 
-🌊港·澳·台,#genre#
-凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
+☘️黑龙江频道,#genre#
 
 🎬电影频道,#genre#
 
@@ -274,5 +247,7 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 
 🎵音乐频道,#genre#
 
+☘️轮播,#genre#
+
 🕘️更新时间,#genre#
-2025-05-15 06:03:54,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
+2025-05-15 13:25:26,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
