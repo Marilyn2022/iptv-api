@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<tv date="20250515052525 +0800">
+<tv date="20250515070225 +0800">
 	<channel id="CCTV-15">
 		<display-name lang="zh">CCTV-15</display-name>
 	</channel>
@@ -7365,6 +7365,12 @@
 	<programme channel="黑莓动画" start="20250515112900 +0800" stop="20250515122900 +0800">
 		<title lang="zh">哪吒闹海</title>
 	</programme>
+	<programme channel="黑莓动画" start="20250515122900 +0800" stop="20250515135200 +0800">
+		<title lang="zh">邋遢大王奇遇记电影版</title>
+	</programme>
+	<programme channel="黑莓动画" start="20250515135200 +0800" stop="20250515151400 +0800">
+		<title lang="zh">黑猫警长之翡翠之星</title>
+	</programme>
 	<channel id="黑莓电影">
 		<display-name lang="zh">黑莓电影</display-name>
 	</channel>
@@ -7388,6 +7394,9 @@
 	</programme>
 	<programme channel="黑莓电影" start="20250515114400 +0800" stop="20250515130800 +0800">
 		<title lang="zh">重案行动之捣毒任务</title>
+	</programme>
+	<programme channel="黑莓电影" start="20250515130800 +0800" stop="20250515144700 +0800">
+		<title lang="zh">观山太保</title>
 	</programme>
 	<channel id="黑龙江少儿">
 		<display-name lang="zh">黑龙江少儿</display-name>
