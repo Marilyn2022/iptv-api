@@ -222,7 +222,6 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 ☘️广东频道,#genre#
 
 ☘️浙江频道,#genre#
-上虞新闻综合,http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
 上虞文化影院,http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8zzhed
 
 ☘️北京频道,#genre#
@@ -249,8 +248,6 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 
 ☘️福建频道,#genre#
 
-☘️海南频道,#genre#
-
 ☘️河南频道,#genre#
 
 ☘️河北频道,#genre#
@@ -269,18 +266,11 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 
 ☘️吉林频道,#genre#
 
-☘️内蒙古频道,#genre#
-
-☘️云南频道,#genre#
-
 ☘️青海频道,#genre#
-
-☘️黑龙江频道,#genre#
 
 🌊港·澳·台,#genre#
 凤凰中文,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
-翡翠台,http://php.jdshipin.com/TVOD/iptv.php?id=fct2
 
 🏀体育频道,#genre#
 
@@ -295,4 +285,4 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 数字频道,#genre#
 
 🕘️更新时间,#genre#
-2025-05-16 18:47:13,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
+2025-05-17 07:02:28,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
