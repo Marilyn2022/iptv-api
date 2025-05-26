@@ -222,7 +222,10 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 ☘️广东频道,#genre#
 
 ☘️浙江频道,#genre#
+浙江数码时代,https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8\r\n
+浙江教科影院,http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
 苍南新闻综合,http://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8?zzhed
+中国蓝新闻,https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8?
 上虞新闻综合,http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
 上虞文化影院,http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8zzhed
 
@@ -295,4 +298,4 @@ ICU病房,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhe
 数字频道,#genre#
 
 🕘️更新时间,#genre#
-2025-05-26 06:36:24,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
+2025-05-26 18:45:44,https://hlsdofviewmgspvod.aikan.miguvideo.com/depository_yqv/asset/zhengshi/5105/240/969/5105240969/media/5105240969_5229088474_56.mp4
