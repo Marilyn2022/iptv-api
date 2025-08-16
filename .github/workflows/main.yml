@@ -8,10 +8,43 @@ on:
       - master
       - dev
       - gd
+  # 添加对上游仓库push事件的监听
+  repository_dispatch:
+    types: [upstream_update]
 
 jobs:
+  # 添加同步上游仓库的job
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Sync upstream
+        run: |
+          # 添加上游仓库
+          git remote add upstream https://github.com/Guovin/iptv-api.git
+          
+          # 获取上游仓库的更新
+          git fetch upstream
+          
+          # 合并上游master分支的更改
+          git merge upstream/master --no-edit
+          
+          # 推送更改到当前仓库
+          git push origin master
+
   push:
     runs-on: ubuntu-latest
+    needs: sync-upstream
     
     steps:
       - name: Checkout repository
