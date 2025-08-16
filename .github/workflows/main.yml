@@ -2,110 +2,30 @@ name: 'Update schedule'
 
 on:
   schedule:
-    - cron: '0 22,10 * * *'
-  workflow_dispatch:
+    - cron: '0 22,10 * * *' # 每天的UTC时间10:00和22:00触发
+  workflow_dispatch: # 允许手动触发
     branches:
-      - master
-      - dev
-      - gd
-  repository_dispatch:
-    types: [upstream_update]
-
-# 添加环境变量
-env:
-  PYTHON_VERSION: '3.11.5'  # 固定Python版本
-  CHROME_VERSION: '116.0.5845.110'  # 固定Chrome版本
-  MAX_RETRY_ATTEMPTS: 3  # 重试次数
+      - my_iptv
 
 jobs:
-  sync-upstream:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4  # 更新到最新的稳定版本
-        with:
-          ref: master
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Configure Git
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-      - name: Sync upstream
-        id: sync
-        continue-on-error: true
-        run: |
-          # 添加重试机制
-          for i in $(seq 1 ${{ env.MAX_RETRY_ATTEMPTS }}); do
-            echo "Attempt $i to sync with upstream..."
-            
-            if git remote | grep -q "^upstream$"; then
-              git remote remove upstream
-            fi
-            
-            git remote add upstream https://github.com/Guovin/iptv-api.git
-            
-            if git fetch upstream; then
-              echo "Successfully fetched from upstream"
-              if git merge upstream/master --no-edit; then
-                echo "Successfully merged upstream changes"
-                if git push origin master; then
-                  echo "Successfully pushed changes"
-                  exit 0
-                fi
-              fi
-            fi
-            
-            echo "Attempt $i failed, waiting before retry..."
-            sleep $((i * 10))
-          done
-          echo "::error::Failed to sync with upstream after ${{ env.MAX_RETRY_ATTEMPTS }} attempts"
-          exit 1
-
-      - name: Notify sync failure
-        if: failure()
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: 'Upstream sync failed',
-              body: `Sync with upstream repository failed on ${new Date().toISOString()}`
-            })
-
   push:
-    runs-on: ubuntu-latest
-    needs: sync-upstream
-    
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ 'ubuntu-latest' ]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Set branch name
+        id: vars
+        run: echo "BRANCH_NAME=my_iptv" >> $GITHUB_ENV
+      - uses: actions/checkout@v3
         with:
-          ref: master
-          fetch-depth: 1
-      
-      # 添加依赖项缓存
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/pip
-            ~/.cache/pipenv
-            ~/.local/share/virtualenvs
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/Pipfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-      
-      - name: Run with setup-python
+          ref: ${{ env.BRANCH_NAME }}
+      - name: Run with setup-python 3.13
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version: '3.13'
           update-environment: true
           cache: 'pipenv'
-      
       - name: Check open_driver config
         id: check_driver
         run: |
@@ -113,117 +33,34 @@ jobs:
           try:
             from utils.config import config
             open_driver = config.open_driver
-          except Exception as e:
-            print(f"Error reading config: {e}", file=sys.stderr)
+          except:
             open_driver = False
           print(open_driver)')" >> $GITHUB_ENV
-      
-      # 添加 Chrome 缓存
-      - name: Cache Chrome
-        if: env.OPEN_DRIVER == 'True'
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/google-chrome
-          key: ${{ runner.os }}-chrome-${{ env.CHROME_VERSION }}
-      
       - name: Set up Chrome
         if: env.OPEN_DRIVER == 'True'
         uses: browser-actions/setup-chrome@latest
         with:
-          chrome-version: ${{ env.CHROME_VERSION }}
-      
+          chrome-version: stable
       - name: Download chrome driver
         if: env.OPEN_DRIVER == 'True'
         uses: nanasess/setup-chromedriver@master
-        with:
-          chrome-version: ${{ env.CHROME_VERSION }}
-      
       - name: Install FFmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
-        
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Install pipenv
-        run: |
-          python -m pip install --user pipenv
-          echo "Successfully installed pipenv"
-      
-      # 添加依赖项安全扫描
-      - name: Security scan dependencies
-        run: |
-          python -m pip install safety
-          safety check
-      
-      - name: Install dependencies
-        run: |
-          pipenv --python ${{ env.PYTHON_VERSION }}
-          pipenv install --deploy
-        continue-on-error: false
-      
+        run: pip3 install --user pipenv
+      - name: Install dependecies
+        run: pipenv --python 3.13 && pipenv install --deploy
       - name: Install selenium
         if: env.OPEN_DRIVER == 'True'
         run: pipenv install selenium
-      
       - name: Update
-        id: update
-        run: |
-          echo "Starting update process at $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-          
-          for i in $(seq 1 ${{ env.MAX_RETRY_ATTEMPTS }}); do
-            echo "Attempt $i to run update..."
-            if pipenv run dev; then
-              echo "Update process completed successfully"
-              exit 0
-            fi
-            echo "Attempt $i failed, waiting before retry..."
-            sleep $((i * 10))
-          done
-          
-          echo "::error::Update process failed after ${{ env.MAX_RETRY_ATTEMPTS }} attempts"
-          exit 1
-      
+        run: pipenv run dev
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          echo "Checking for changes at $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git add .
-          
           if ! git diff --staged --quiet; then
-            echo "Changes detected, committing..."
-            
-            # 创建更详细的提交信息
-            COMMIT_MSG="Auto Update: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
-            
-            Changes summary:
-            $(git diff --staged --stat)"
-            
-            git commit -m "$COMMIT_MSG"
-            
-            echo "Pushing changes..."
-            git pull --rebase
-            git push
-            
-            echo "Successfully pushed changes"
-          else
-            echo "No changes to commit"
+            git commit -m "Github Action Auto Updated"
+            git push --force
           fi
-
-      # 添加工作流状态通知
-      - name: Notify workflow status
-        if: always()
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const status = '${{ job.status }}'
-            const message = status === 'success'
-              ? '✅ Workflow completed successfully'
-              : '❌ Workflow failed'
-              
-            github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: `${message} at ${new Date().toISOString()}`
-            })
