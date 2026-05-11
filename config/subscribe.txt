@@ -3,6 +3,7 @@
 
 https://urlzf.zone.id/tvjk/migudy.txt
 https://urlzf.zone.id/tvjk/jd2.txt
+https://raw.githubusercontent.com/zilong7728/Collect-IPTV/refs/heads/main/best_sorted.m3u
 
 https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/bililive.m3u
 https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/douyuyqk.m3u
@@ -10,7 +11,6 @@ https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/huyayqk.m3u
 https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/yylunbo.m3u
 https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/yylunbo.m3u
 https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/iptv.m3u
-
 
 
 https://raw.githubusercontent.com/peterHchina/iptv/refs/heads/main/CNTV-V4.m3u  
